@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="title">Tic-Tac-Toe</h1>
+      <div class="mode-selector">
+        <label for="mode">Choose mode:</label>
+        <select id="mode" onchange="changeMode()">
+          <option value="friend">Play with a friend</option>
+          <option value="computer">Play against the computer</option>
+        </select>
+      </div>
+      <div class="board" id="board"></div>
+      <div class="status" id="status"></div>
+      <div class="buttons">
+        <button onclick="resetGame()">Restart Game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
